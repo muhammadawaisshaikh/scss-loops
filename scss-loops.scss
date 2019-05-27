@@ -1,0 +1,9 @@
+$branchesImg: branch !default;
+
+.branchesLink {
+  @for $i from 1 through 3 {
+    &.#{$branchesImg}-#{$i} {
+      background-image: url("images/branches/branchesImg-#{+$i}.jpg");
+    }
+  }
+}
